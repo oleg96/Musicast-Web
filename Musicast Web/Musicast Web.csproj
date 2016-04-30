@@ -207,16 +207,33 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="comet.aspx" />
+    <Content Include="Content\MYXJGM.css" />
+    <Content Include="Content\normalize.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="drum.html" />
     <Content Include="Electronic.aspx" />
     <Content Include="comet.ashx" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="index.htm" />
+    <Content Include="pattern.html" />
+    <Content Include="patterns.html" />
+    <Content Include="Scripts\backbone-min.js" />
     <Content Include="Scripts\comet.js" />
+    <Content Include="Scripts\handlebars.min.js" />
+    <Content Include="Scripts\drum.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lodash.min.js" />
+    <Content Include="Scripts\pattern-loader.js" />
+    <Content Include="Scripts\patterns.js" />
     <Content Include="Scripts\play.js" />
+    <Content Include="Sounds\closedHat.wav" />
+    <Content Include="Sounds\kick.wav" />
+    <Content Include="Sounds\openHat.wav" />
+    <Content Include="Sounds\snare.wav" />
     <Content Include="synth.jpg" />
     <Content Include="Synthesizers.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
@@ -295,6 +312,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\ChatRoom.cshtml" />
     <Content Include="Views\Home\History.cshtml" />
+    <Content Include="SCSS\style.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -427,6 +445,8 @@
       <DependentUpon>Electronic.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\ChatModel.cs" />
+    <Compile Include="Models\PatternModel.cs" />
+    <Compile Include="Models\SynthPattern.cs" />
     <Compile Include="Synthesizers.aspx.cs">
       <DependentUpon>Synthesizers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
