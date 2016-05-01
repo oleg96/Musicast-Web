@@ -6,9 +6,9 @@
     <iframe id="ifrmDrum" src="drum.html" style="height: 600px; width: 43%;" frameborder=no></iframe>
     <iframe id="ifrmPatterns" src="patterns.html" style="height: 600px; width: 56%;" frameborder=no></iframe>
     <%--<iframe id="ifrmPattern" src="pattern.html" style="height: 600px; width: 100%;" frameborder=no></iframe>--%>
-    <link rel="stylesheet" href="Content/normalize.css">
-    <link rel="stylesheet" href="Content/MYXGM.css">
-    <link rel="stylesheet" href="Content/style.css">
+    <link href="Content/normalize.css" rel="stylesheet">
+    <link href="Content/MYXJGM.css" rel="stylesheet prefetch">
+    <link href="Content/style.css" rel="stylesheet">
         <div class="app">
         <div class="app-region" id="r-head">
             		<h3>Metronome</h3>		
@@ -22,7 +22,7 @@
                 <div class="app-region" id="r-top">    
             <div class="module transport">      
                 <h3>Transport</h3>      
-                <button class="transport-play" title="Play">►</button>			
+                <button class="transport-play" title="Play" onclick="">►</button>			
                 <button class="transport-stop" title="Stop">■</button>			
             </div>  
         </div>
