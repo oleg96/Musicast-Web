@@ -32,6 +32,11 @@
     margin-left:1px;
     background: rgba(86, 106, 95, 1);
 }
+
+.pat.active {
+    outline: 2px solid #fff; /* рамка */
+}
+
 .pat_active {
     width: 16px;
     height:17px;
@@ -39,13 +44,14 @@
     margin-left:1px;
     background: rgba(144, 122, 88, 1);
 }
+.pat.active {
 
+}
 .seq_row {
     margin:1px;
     padding:1px;
     height:17px;
 }
-
 
 body {
     background-color:rgb(32,32,32);
