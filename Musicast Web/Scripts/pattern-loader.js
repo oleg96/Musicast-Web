@@ -69,9 +69,8 @@ function onPatternClick(id) {
     }
 }
 function patternPlayer(j) {
-        for (var i = j; i < j*35+j;) {
+    for (var i = j; i < 64*35+j; i += 64) {
             var pattern = document.getElementById(i);
-            pattern.$active();
             if (pattern.className == 'pat') {
                 var note = pattern.getAttribute('value');
                 var key = window.frames[0].document.getElementById(note);
@@ -98,6 +97,5 @@ function patternPlayer(j) {
                 else
                     console.log("*** Target node not found!");
             }
-            i += 64;
         }
 }

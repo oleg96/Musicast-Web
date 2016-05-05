@@ -10,12 +10,21 @@
     <link href="Content/MYXJGM.css" rel="stylesheet prefetch">
     <link href="Content/style.css" rel="stylesheet">
         <script>
-            var i = 0;
-            var time = (60 / (window.frames[1].document.getElementsByTagName('transport - tempo') * 64)) * 1000;
-            function playPattern() {
-                for (var i = 0; i < 64; i++) {
-                    setTimeout(patternPlayer(i), time);
-                }
+            function startPlayPattern() {
+                var i = 0;
+                var time = (60 / (window.frames[1].document.getElementsByTagName('transport - tempo') * 64)) * 1000;
+                var timerId = setInterval(function () {
+                    patternPlayer(i);
+                    i++;
+                    if (i == 64) {
+                        clearInterval(timerId);
+                    }
+                }, time);
+                // через n сек остановить повторы
+                //setTimeout(function () {
+                    //clearInterval(timerId);
+                    //alert('стоп');
+                //}, time * 64);
             }
         </script>
 
@@ -32,7 +41,7 @@
                 <div class="app-region" id="r-top">    
             <div class="module transport">      
                 <h3>Transport</h3>      
-                <button class="transport-play" title="Play" onclick="playPattern();return false;">►</button>			
+                <button class="transport-play" title="Play" onclick="startPlayPattern();return false;">►</button>			
                 <button class="transport-stop" title="Stop">■</button>			
             </div>  
         </div>
